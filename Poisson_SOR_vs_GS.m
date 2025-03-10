@@ -87,12 +87,12 @@ for k = 1:nk
     
     if ~SOR_converge && max_diff_SOR < converge
         fprintf('SOR converged at iteration %d\n', k);
-        sor_converged = true;
+        SOR_converge = true;
     end
     
     if ~GS_converge && max_diff_GS < converge
         fprintf('GS converged at iteration %d\n', k);
-        gs_converged = true;
+        GS_converge = true;
     end
     
     % If both have converged, stop early
