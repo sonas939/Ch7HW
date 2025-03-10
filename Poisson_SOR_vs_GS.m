@@ -81,7 +81,7 @@ for k = 1:nk
     mesh( x, y, SOR - GS );
     axis( [ 0 1 0 1 -0.05 0.05 ])
 
-    % Compute when the convergence has reached 0 (or close to 0 in this case for an estiamtion) ---
+    % Compute when the convergence has reached 0 (or close to 0 in this case for an estiamtion)
     max_diff_SOR = max(max(abs(SOR - SOR_old)));
     max_diff_GS = max(max(abs(GS - GS_old)));
     
